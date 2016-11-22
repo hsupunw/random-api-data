@@ -1,0 +1,2 @@
+GET #/foo #bar_chart
+POST #/chart_2 #pi_chart
