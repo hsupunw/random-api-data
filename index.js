@@ -23,7 +23,7 @@ lines.map(e => {
 	var method = api[0].trim();
 	var endpoint = api[1].trim();
 	var response_json = JSON.parse(fs.readFileSync('./endpoints/' + api[2] + '.json'));
-	//console.log(method.length, endpoint, response_json)	
+	console.log(method, endpoint)	
 	if(method === 'GET') {
 		
 		server.get(endpoint, function (req, res, next) {
